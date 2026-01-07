@@ -1,0 +1,29 @@
+<!-- solar.html -->
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Solar System</title>
+  <link rel="stylesheet" href="assets/css/solar.css" />
+</head>
+<body>
+  <div id="hud">
+    <div id="title">Solar System</div>
+    <div id="hint">Drag: drehen · Wheel/Pinch: zoom · Click: Planet</div>
+    <div class="row">
+      <label>Speed</label>
+      <input id="speed" type="range" min="0" max="3" step="0.01" value="1" />
+    </div>
+    <div id="card" hidden>
+      <button id="close">×</button>
+      <h2 id="cardTitle"></h2>
+      <p id="cardText"></p>
+    </div>
+  </div>
+
+  <canvas id="c"></canvas>
+
+  <script type="module" src="assets/js/solar.js"></script>
+</body>
+</html>
